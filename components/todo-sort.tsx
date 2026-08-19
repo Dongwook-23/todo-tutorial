@@ -19,6 +19,11 @@ export function TodoSort({ value, onChange }: TodoSortProps) {
             type="button"
             size="sm"
             variant={selected ? "default" : "outline"}
+            className={
+              selected
+                ? "bg-amber-500 border-amber-500 text-white hover:bg-amber-500/80"
+                : undefined
+            }
             role="radio"
             aria-checked={selected}
             onClick={() => onChange(item.value)}

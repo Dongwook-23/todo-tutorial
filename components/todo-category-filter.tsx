@@ -22,6 +22,11 @@ export function TodoCategoryFilter({
             type="button"
             size="sm"
             variant={selected ? "default" : "outline"}
+            className={
+              selected
+                ? "bg-emerald-500 border-emerald-500 text-white hover:bg-emerald-500/80"
+                : undefined
+            }
             role="radio"
             aria-checked={selected}
             onClick={() => onChange(item.value)}
